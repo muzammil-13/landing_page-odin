@@ -95,3 +95,8 @@ header ul a{
     outline-color: white;
     background-color: #3882F6;
 }
+
+footer{
+    text-align: center;
+    padding: 2%;
+}
