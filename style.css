@@ -1,3 +1,11 @@
+/* custom variables */
+:root{
+    --primary-color:#1F2937;
+    --secondary-color:#F9FAF8;
+    --accent-color:#3882F6;
+    --text-light:#E5E7EB;;
+}
+
 /* global styling */
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -9,7 +17,7 @@ body{
 
 /* layout */
 header,section,footer{
-    background-color: #1F2937;
+    background-color: var(--primary-color);
     color: #F9FAF8;
 }
 
@@ -24,7 +32,8 @@ header,section,footer{
 
 .header-logo{
     font-size: 24px;
-    color: #F9FAF8;
+    color: var(--secondary-color);
+    font-weight: 700;
 }
 
 header ul{
@@ -37,16 +46,17 @@ header ul{
 
 header ul a{
     text-decoration: none;
-    color: #E5E7EB;
+    color: var(--text-light);
 }
 
 .hero-section{
     display: flex;
+    flex:1;
 }
 
 .hero h2{
     font-size: 48px;
-    color: #F9FAF8;
+    color: var(--secondary-color);
     font-weight: 900;
     margin-left: 3%;
     margin-right: 3%;
@@ -55,50 +65,54 @@ header ul a{
 
 .hero-secondary-text, .header-links{
     font-size: 18px;
-    color: #F9FAF8;
+    color: var(--secondary-color);
     
 }
 
 .information h2{
     font-size: 36px;
-    color: #1F2937;
+    color: var(--primary-color);
     font-weight: 900;
     margin: 3%;
+    text-align: center;
 }
 
 .card-container{
     display: flex;
     text-align: center;
+    justify-content: space-between;
 }
 
 .card{
-    border-color: #3882F6;
+    border-color: var(--accent-color);
 }
 
 .quote-section{
     display: flex;
-    background-color: #E5E7EB;
-    padding: 4%;
+    background-color: var(--text-light);
+    padding: 2%;
     margin:0;
 }
 
 .quote-section p{
     font-size: 36px;
     font-style: italic;
-    color: #1F2937;
+    color: var(--primary-color);
 }
 
 .quote-section span{
+    font-style: normal;
     font-size: 14px;
-    font-style: bold;
+    font-weight: 700;
     color: #000000;
+    text-align: right;
 }
 
 .call-to-action-card{
-    color: #E5E7EB;
+    color: var(--text-light);
     text-align: left;
     display: flex;
-    background-color: #3882F6;
+    background-color: var(--accent-color);
     margin:18px;
     padding:10px;
     width: 50%;
@@ -107,9 +121,9 @@ header ul a{
 }
 
 .cta-btn{
-    color: #E5E7EB;
-    outline-color: white;
-    background-color: #3882F6;
+    color: var(--text-light);
+    outline-color: var(--secondary-color);
+    background-color: var(--accent-color);
 }
 
 footer{
