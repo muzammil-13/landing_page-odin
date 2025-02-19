@@ -16,7 +16,7 @@ body{
 }
 
 /* layout */
-header,section,footer{
+header,.hero-section,footer{
     background-color: var(--primary-color);
     color: #F9FAF8;
 }
@@ -66,6 +66,7 @@ header ul a{
 .hero-secondary-text, .header-links{
     font-size: 18px;
     color: var(--secondary-color);
+    z-index: 1;
     
 }
 
